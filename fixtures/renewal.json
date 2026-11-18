@@ -1,0 +1,10 @@
+{
+  "clauses": [
+    {"document": "MSA-1", "label": "7", "effective": "2026-01-12", "regions": ["华东", "华北"], "services": ["驻场", "远程巡检"], "text": "服务完成后七日内交付记录。", "days": 7},
+    {"document": "ADD-2026-3", "label": "7", "effective": "2026-02-20", "regions": ["华东"], "services": ["驻场"], "replaces": ["MSA-1", "7"], "text": "华东驻场改为四日内交付记录。", "days": 4}
+  ],
+  "sent": [
+    {"id": "MAIL-31", "region": "华东", "service": "驻场", "service_date": "2026-02-27", "key": ["MSA-1", "7"], "answer": {"clause": ["MSA-1", "7"], "text": "服务完成后七日内交付记录。", "days": 7}},
+    {"id": "MAIL-32", "region": "华北", "service": "驻场", "service_date": "2026-02-27", "key": ["MSA-1", "7"], "answer": {"clause": ["MSA-1", "7"], "text": "服务完成后七日内交付记录。", "days": 7}}
+  ]
+}
