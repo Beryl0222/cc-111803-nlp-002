@@ -1,17 +1,20 @@
 [
-  [
-    "ATT-2",
-    "signed-contract",
-    "附件二（MSA-1）。第 4 项 驻场期限为十二个月。第 5 项 华北地区按正文远程巡检期限执行。"
-  ],
-  [
-    "ADD-2026-3",
-    "signed-amendment",
-    "第二条：自 2 月 1 日起，华东地区驻场期限延为十八个月。此变更仅涉及 1 月 12 日附件二第 4 项，其他服务依原约。"
-  ],
-  [
-    "ADD-2026-3-letters",
-    "negotiation-mail",
-    "上月对华东驻场已发出十二个月的续约说明，华北答复是按正文。"
-  ]
+  {
+    "record_id": "ATT-2",
+    "source": "signed-contract",
+    "revision": 1,
+    "text": "附件二（MSA-1）。第 4 项 驻场期限为十二个月。第 5 项 华北地区按正文远程巡检期限执行。"
+  },
+  {
+    "record_id": "ADD-2026-3",
+    "source": "signed-amendment",
+    "revision": 1,
+    "text": "第二条：自 2 月 1 日起，华东地区驻场期限延为十八个月。此变更仅涉及 1 月 12 日附件二第 4 项，其他服务依原约。"
+  },
+  {
+    "record_id": "ADD-2026-3-letters",
+    "source": "negotiation-mail",
+    "revision": 1,
+    "text": "上月对华东驻场已发出十二个月的续约说明，华北答复是按正文。"
+  }
 ]
