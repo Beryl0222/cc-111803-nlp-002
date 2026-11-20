@@ -1,0 +1,22 @@
+{
+  "clauses": [
+    {"document": "MSA-1", "label": "7", "effective": "2026-01-12", "regions": ["华东", "华北"], "services": ["驻场", "远程巡检", "夜间驻场"], "text": "服务完成后七日内交付记录。", "days": 7},
+    {"document": "ATT-2", "label": "5", "effective": "2026-01-12", "regions": ["华东", "华北"], "services": ["远程巡检"], "text": "远程巡检记录五日内交付。", "days": 5},
+    {"document": "ATT-2", "label": "9", "effective": "2026-01-12", "regions": ["华东", "华北"], "services": ["驻场", "远程巡检", "夜间驻场"], "text": "交付期限遇公共假期顺延两日。", "days": 2},
+    {"document": "ATT-2B", "label": "9", "effective": "2026-02-05", "regions": ["华东", "华北"], "services": ["驻场", "远程巡检", "夜间驻场"], "text": "交付期限遇公共假期顺延三日。", "days": 3},
+    {"document": "ADD-2026-3", "label": "7", "effective": "2026-02-20", "regions": ["华东"], "services": ["驻场"], "replaces": ["MSA-1", "7"], "retains": [["ATT-2", "9"]], "text": "华东驻场改为四日内交付记录，附件二约定的公共假期处理不变。", "days": 4},
+    {"document": "ADD-2026-3", "label": "8", "effective": "2026-02-20", "regions": ["华东"], "services": ["远程巡检"], "replaces": ["MSA-1", "7"], "refers": [["ATT-2", "5"]], "text": "华东远程巡检交付期限仍按1月12日附件二第5项执行。"},
+    {"document": "ADD-2026-5", "label": "3", "effective": "2026-04-01", "regions": ["华东"], "services": ["驻场"], "replaces": ["ADD-2026-3", "7"], "retains": [["ATT-2", "9"]], "text": "华东地区驻场服务记录须于服务完成后四日内交付，公共假期顺延安排不变。", "days": 4},
+    {"document": "ADD-2026-6", "label": "10", "effective": "2026-04-09", "regions": ["华东"], "services": ["驻场"], "refers": [{"document": "ADD-2026-6", "label": "11", "condition": "例外"}], "text": "例外情形下交付期限按本协议第11条处理。"},
+    {"document": "ADD-2026-6", "label": "11", "effective": "2026-04-09", "regions": ["华东"], "services": ["驻场"], "refers": [{"document": "ADD-2026-6", "label": "10", "condition": "例外"}], "text": "例外情形下交付期限回按本协议第10条执行。"},
+    {"document": "ADD-2026-7", "label": "2", "effective": "2026-05-01", "regions": ["华东"], "services": ["驻场"], "replaces": ["ADD-2026-5", "3"], "retains": [["ATT-2B", "9"]], "text": "华东驻场交付记录四日内完成，公共假期处理改按新版附件二第9项。", "days": 4},
+    {"document": "ADD-2026-8", "label": "7", "effective": "2026-02-25", "regions": ["华北"], "services": ["驻场", "夜间驻场"], "excludes": {"services": ["夜间驻场"]}, "replaces": ["MSA-1", "7"], "retains": [{"label": "9"}], "text": "华北驻场改为五日内交付记录（夜间驻场除外），公共假期处理按附件二第9项执行。", "days": 5}
+  ],
+  "sent": [
+    {"id": "MAIL-41", "region": "华东", "service": "驻场", "service_date": "2026-02-27", "key": ["MSA-1", "7"], "answer": {"clause": ["MSA-1", "7"], "text": "服务完成后七日内交付记录。", "days": 7, "exceptions": []}},
+    {"id": "MAIL-42", "region": "华北", "service": "驻场", "service_date": "2026-02-27", "key": ["MSA-1", "7"], "answer": {"clause": ["MSA-1", "7"], "text": "服务完成后七日内交付记录。", "days": 7, "exceptions": []}},
+    {"id": "MAIL-43", "region": "华东", "service": "驻场", "service_date": "2026-04-10", "key": ["MSA-1", "7"], "answer": {"clause": ["ADD-2026-3", "7"], "text": "华东驻场改为四日内交付记录，附件二约定的公共假期处理不变。", "days": 4, "exceptions": [{"clause": ["ATT-2", "9"], "text": "交付期限遇公共假期顺延两日。", "days": 2}]}},
+    {"id": "MAIL-44", "region": "华东", "service": "远程巡检", "service_date": "2026-02-27", "key": ["MSA-1", "7"], "answer": {"clause": ["MSA-1", "7"], "text": "服务完成后七日内交付记录。", "days": 7, "exceptions": []}},
+    {"id": "MAIL-45", "region": "华东", "service": "驻场", "service_date": "2026-05-11", "key": ["MSA-1", "7"], "answer": {"clause": ["ADD-2026-5", "3"], "text": "华东地区驻场服务记录须于服务完成后四日内交付，公共假期顺延安排不变。", "days": 4, "exceptions": [{"clause": ["ATT-2", "9"], "text": "交付期限遇公共假期顺延两日。", "days": 2}]}}
+  ]
+}
